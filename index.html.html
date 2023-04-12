@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nature Gallery Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      .header {
+        padding: 80px;
+        text-align: center;
+        background: #082a08;
+        color: white;
+      }
+
+      .header h1 {
+        font-size: 40px;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: rgb(69, 126, 72);
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: left;
+        padding: 40px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(115, 156, 118);
+        color: black;
+      }
+
+      .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flexbox: wrap;
+        flex-wrap: wrap;
+      }
+
+      /*Create two unequal columns*/
+      .side {
+        -ms-flex: 20%;
+        flex: 20%;
+        background-color: rgb(106, 157, 117);
+        padding: 50px;
+        width: 20px;
+      }
+
+      .main {
+        -ms-flex: 80%;
+        flex: 80%;
+        background-color: white;
+        padding: 20px;
+      }
+
+      .fimg {
+        background-color: #aaa;
+        width: 100px;
+        height: 200px;
+        padding: 20px;
+      }
+
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: rgb(106, 157, 117);
+      }
+
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row {
+          flex-direction: column;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .navbar a {
+          float: left;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>The Beauty of Nature</h1>
+      <h3>Photo Gallery</h3>
+    </div>
+
+    <div class="row">
+      <div class="side">
+        <div class="navbar">
+          <a href="#">Home</a>
+          <a href="#">Photo Gallery</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="main">
+        <h2>Home</h2>
+        <p>
+          “In nature, nothing is perfect and everything is perfect. Trees can be
+          contorted, bent in weird ways, and they're still beautiful.” “Nature
+          brings solace in all troubles.” “Nature is the purest portal to
+          inner-peace.”
+        </p>
+
+        <h3>Photo Gallery</h3>
+        <img
+          src="/Images/sunset.jpg"
+          alt="Flowers"
+          width="200"
+          height="300"
+          object-fit="cover"
+        />
+
+        <img
+          src="/Images/squirrel.jpg"
+          alt="Squirrel"
+          width="200"
+          height="300"
+        />
+        <img
+          src="/Images/butterfly.jpg"
+          alt="Butterfly"
+          width="200"
+          height="300"
+        />
+        <img src="/Images/ocean.jpg" alt="Butterfly" width="200" height="300" />
+        <img src="/Images/tree.jpg" alt="Butterfly" width="200" height="300" />
+        <img
+          src="/Images/village.jpg"
+          alt="Butterfly"
+          width="200"
+          height="300"
+        />
+        <img
+          src="/Images/giraffe.jpg"
+          alt="Butterfly"
+          width="200"
+          height="300"
+        />
+        <img src="/Images/stars.jpg" alt="Butterfly" width="200" height="300" />
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="Contact" style="text-align: center">
+        <h3>Contact me</h3>
+        <p>
+          Simranjot kaur<br /><a href="mailto:Email@google.com"
+            >Email@google.com</a
+          ><br /><a href="callto:9987698790">9987698790</a>
+        </p>
+      </div>
+      <a href="#">Jump to Top</a>
+    </div>
+  </body>
+</html>
